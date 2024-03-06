@@ -71,6 +71,17 @@
     }
   }
   
+  .sub-text{
+    font-size: 1.75rem;
+    font-weight: 600;
+    // text-align: center;
+    color: var(--black-color);
+    text-transform: capitalize;
+
+    @media screen and (max-width: 450px) {
+      font-size: 1.4rem;
+    }
+  }
   .p-text {
     font-size: 0.8rem;
     text-align: left;

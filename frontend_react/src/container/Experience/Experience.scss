@@ -1,0 +1,43 @@
+.app__experiences {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    // background-color: ;
+}
+.app__exp-item{
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    background: var(--white-color);
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding:3rem;
+    img{
+        width: 200px;
+        height: 100px;
+        padding: 1rem;
+    }
+
+}
+.app__exp-company-head-details{
+    margin: 10px;
+}
+.app__exp_role{
+    font-weight: 1000;
+}
+.app__exp-body{
+    padding: 1rem;
+    .p-text{
+    font-size: 1rem ;
+    }
+}
+                    
+.app__exp_skills{
+    margin-top: 1rem;
+}
+.app__skill-name{
+    margin: 0.4rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
