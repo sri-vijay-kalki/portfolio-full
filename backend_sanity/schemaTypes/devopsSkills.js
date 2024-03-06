@@ -1,6 +1,6 @@
 export default{
-    name:'skills',
-    title:'Skills',
+    name:'devopsSkills',
+    title:'Cloud Technologies',
     type: 'document',
     fields:[
         {

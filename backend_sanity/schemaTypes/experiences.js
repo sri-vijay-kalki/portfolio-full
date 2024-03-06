@@ -4,15 +4,38 @@ export default{
     type: 'document',
     fields:[
         {
-            name:'year',
-            title:'Year',
+            name:'company',
+            title:'Company',
             type:'string'
         },
         {
-            name:'works',
-            title:'Works',
+            name:'company_logo',
+            title:'Company_Logo',
+            type:'image',
+            options: {
+                hotspot: true,
+            },
+        },
+        {
+            name:'role',
+            title:'Role',
+            type:'string'
+        },
+        {
+            name:'duration',
+            title:'Duration',
+            type:'string'
+        },
+        {
+            name:'description',
+            title:'Description',
+            type:'string'
+        },
+        {
+            name:'skills',
+            title:'Skills',
             type:'array',
-            of:[{ type:'workExperience'}]
+            of:[{ type:'string'}]
         },
     ]
 }
