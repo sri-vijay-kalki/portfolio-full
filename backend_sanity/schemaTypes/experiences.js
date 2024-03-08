@@ -9,6 +9,11 @@ export default{
             type:'string'
         },
         {
+            name:'location',
+            title:'Location',
+            type:'string'
+        },
+        {
             name:'company_logo',
             title:'Company_Logo',
             type:'image',
@@ -30,6 +35,11 @@ export default{
             name:'description',
             title:'Description',
             type:'string'
+        },
+        {
+            name:'priority',
+            title:'Priority',
+            type:'number'
         },
         {
             name:'skills',

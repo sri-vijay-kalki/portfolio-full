@@ -8,7 +8,7 @@ const Experience = () => {
     const [experiences,setExperiences] = useState([]);
 
     useEffect(() => {
-        const experienceQuery ='*[_type == "experiences"]';
+        const experienceQuery ='*[_type == "experiences"] | order(priority desc)';
 
         client.fetch(experienceQuery).then((data) => {
             setExperiences(data);
