@@ -37,7 +37,7 @@ import spotify from '../assets/spotify.png';
 import springBoot from '../assets/spring-boot.png';
 import googleCloud from '../assets/google-cloud.png';
 
-export default {
+const images = {
   email,
   mobile,
   api,
@@ -72,5 +72,7 @@ export default {
   skype,
   spotify,
   springBoot,
-  googleCloud
+  googleCloud,
 };
+
+export default images;
