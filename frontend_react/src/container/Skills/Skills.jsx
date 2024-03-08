@@ -31,7 +31,7 @@ const Skills = () => {
     <>
       <h2 className="head-text">Skills</h2>
       <div className='app__skills-sub-section'>
-        <div>
+          <div className='app__section'>
           <h3 className='sub-text'>Front-End</h3>
           <div className="app__skills-container">
             <motion.div className="app__skills-list">
@@ -54,7 +54,7 @@ const Skills = () => {
             </motion.div>
             </div>
           </div>
-          <div >
+          <div className='app__section'>
             <h3 className='sub-text'>Back-End</h3>
             <div className="app__skills-container">
             <motion.div className="app__skills-list">
