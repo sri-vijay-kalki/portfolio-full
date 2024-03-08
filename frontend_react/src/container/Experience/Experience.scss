@@ -9,13 +9,18 @@
     display: flex;
     align-items: flex-start;
     background: var(--white-color);
-      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     padding:3rem;
     img{
         width: 200px;
         height: 100px;
         padding: 1rem;
+    }
+
+    @media screen and (max-width: 450px) {
+        display: 100%;
+        padding: 0.25rem;
     }
 
 }
@@ -39,5 +44,5 @@
     margin: 0.4rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
