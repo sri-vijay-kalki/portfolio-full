@@ -56,3 +56,13 @@
         border-radius: 0.25rem;
     }
 }
+
+.app__exp-desc{
+    max-height: 25vh ;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: max-height 2s ease-in-out;
+    &:hover{
+    max-height: 100vh;
+    }
+}

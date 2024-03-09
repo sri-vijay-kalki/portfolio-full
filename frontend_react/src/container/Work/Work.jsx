@@ -13,7 +13,7 @@ const Work = () => {
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
   useEffect(() => {
-    const query = '*[_type == "works"]';
+    const query = '*[_type == "works"] | order(priority desc)';
 
     client.fetch(query).then((data) => {
       setWorks(data);
@@ -41,7 +41,7 @@ const Work = () => {
       <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
 
       <div className="app__work-filter">
-        {['JAVA','Cloud','React JS','AI /ML','ALL'].map((item, index) => (
+        {['JAVA','Cloud','React JS','AI / ML','ALL'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}

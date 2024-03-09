@@ -32,7 +32,11 @@ export default {
           hotspot: true,
         },
       },
-   
+      {
+        name:'priority',
+        title:'Priority',
+        type:'number'
+      },
       {
         name: 'tags',
         title: 'Tags',

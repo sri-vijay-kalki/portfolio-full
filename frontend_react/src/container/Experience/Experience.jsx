@@ -36,7 +36,7 @@ const Experience = () => {
                         </div>
                     </div>
                     <div className="app__exp-body">
-                        <div className="p-text">{experience.description}</div>
+                        <div className="p-text app__exp-desc">{experience.description}</div>
                         <div className="app__exp_skills">
                             <span>Skills:</span>
 
