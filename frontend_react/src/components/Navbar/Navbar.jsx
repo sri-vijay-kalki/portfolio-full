@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
         <nav className="app__navbar">
             <div className="app__logo">
-                Poosarla Sri Vijay Kalki
+                Sri Vijay Kalki Poosarla
             </div>
             <ul className='app__navbar-links'>
                 {['home', 'about', 'skills','experience','work','testimonial', 'contact'].map((item)=>(

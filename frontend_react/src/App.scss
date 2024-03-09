@@ -64,6 +64,7 @@
   
     @media screen and (min-width: 2000px) {
       font-size: 4rem;
+      text-wrap: nowrap;
     }
   
     @media screen and (max-width: 450px) {
@@ -91,6 +92,10 @@
     @media screen and (min-width: 2000px) {
       font-size: 1.75rem;
     }
+  }
+
+  .key-word{
+    color: var(--secondary-color);
   }
   
   .bold-text {

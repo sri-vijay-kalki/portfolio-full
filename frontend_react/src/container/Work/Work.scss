@@ -154,4 +154,14 @@
       top: -25px;
     }
   }
+
+.app__work_description{
+  max-height: 10vh;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: max-height 1s ease-in-out;
+  &:hover{
+    max-height: 100vh;
+  }
+}
   

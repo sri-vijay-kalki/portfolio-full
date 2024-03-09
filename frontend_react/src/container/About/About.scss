@@ -13,10 +13,10 @@
   }
   
   .app__profile-item {
-    width: 190px;
+    width: 300px;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     margin: 2rem;
   
@@ -26,7 +26,10 @@
       border-radius: 15px;
       object-fit: cover;
     }
-  
+    
+    @media screen and (max-width: 450px) {
+      width: 190px;
+    }
     @media screen and (min-width: 2000px) {
       width: 370px;
       margin: 2rem 4rem;
