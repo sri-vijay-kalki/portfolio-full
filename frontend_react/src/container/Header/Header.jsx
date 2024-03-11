@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import images from '../../constants/images';
 import './Header.scss';
 import AppWrap from '../../wrapper/AppWrap';
-import { client } from '../../client';
+// import { client } from '../../client';
 
 const scaleVariants = {
   whileInView: {
@@ -18,15 +18,15 @@ const scaleVariants = {
 };
 
 const Header = () => {
-  useEffect(() => {
-  const temp = {
-    _type:'siteSettings',
-    namVal:'siteSettings'
-    };
-    client.create(temp)
-      .then(() => {console.log('Thank you')});
+  // useEffect(() => {
+  // const temp = {
+  //   _type:'siteSettings',
+  //   namVal:'siteSettings'
+  //   };
+  //   client.create(temp)
+  //     .then(() => {console.log('Thank you')});
 
-  },[])
+  // },[])
   return (
     <div id = "home" className="app__header app__flex">
       <motion.div
