@@ -163,6 +163,9 @@
         margin: 1rem;
       }
     }
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
   }
   
   .app__header-img {
@@ -192,6 +195,50 @@
   
     @media screen and (max-width: 1200px) {
       margin: 2rem 0;
+    }
+  }
+
+  .app__social_home {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap:1.25rem;
+
+  
+    padding: 1rem;
+  
+    div {
+      width: 70px;
+      height: 60px;
+      border-radius: 45%;
+      background-color: var(--white-color);
+      margin: 0.25rem 0;
+      border: 1px solid var(--lightGray-color);
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      transition: all 0.3s ease-in-out;
+  
+      svg {
+        width: 20px;
+        height: 20px;
+        color: var(--gray-color);
+      }
+  
+      &:hover {
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
+  
+        svg {
+          color: var(--white-color);
+        }
+      }
+    }
+
+    @media screen and (min-width: 501px) {
+      display: none;
     }
   }
   

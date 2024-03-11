@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import images from '../../constants/images';
 import './Header.scss';
 import AppWrap from '../../wrapper/AppWrap';
+import { BsGithub, BsLinkedin, BsInstagram } from 'react-icons/bs';
 // import { client } from '../../client';
 
 const scaleVariants = {
@@ -63,19 +64,37 @@ const Header = () => {
         alt="profile_circle"
         className="overlay_circle"
       />
-    </motion.div>
+      </motion.div>
 
-    <motion.div
-      variants={scaleVariants}
-      whileInView={scaleVariants.whileInView}
-      className="app__header-circles"
-    >
-      {[images.react, images.googleCloud, images.springBoot].map((circle, index) => (
-        <div className="circle-cmp app__flex" key={`circle-${index}`}>
-          <img src={circle} alt="profile_bg" />
+      <motion.div
+        variants={scaleVariants}
+        whileInView={scaleVariants.whileInView}
+        className="app__header-circles"
+      >
+        {[images.react, images.googleCloud, images.springBoot].map((circle, index) => (
+          <div className="circle-cmp app__flex" key={`circle-${index}`}>
+            <img src={circle} alt="profile_bg" />
+          </div>
+        ))}
+      </motion.div>
+
+      <div className="app__social_home">
+        <div className="app__hyperlinks">
+          <a href="https://github.com/sri-vijay-kalki" target="_blank" rel="noopener noreferrer">
+            <BsGithub />
+          </a>
         </div>
-      ))}
-    </motion.div>
+        <div className="app__hyperlinks">
+          <a href="https://www.linkedin.com/in/srivijaykalki/" target="_blank" rel="noopener noreferrer">
+            <BsLinkedin />
+          </a>
+        </div>
+        <div  className="app__hyperlinks">
+          <a href="https://www.instagram.com/sri_vj_kalki/" target="_blank" rel="noopener noreferrer">
+            <BsInstagram />
+          </a>
+        </div>
+      </div>
     </div>
   )
 }
