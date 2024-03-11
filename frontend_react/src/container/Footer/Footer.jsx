@@ -4,6 +4,7 @@ import images from '../../constants/images';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
 import './Footer.scss';
+import emailjs from '@emailjs/browser';
 
 const Footer = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -26,13 +27,17 @@ const Footer = () => {
       email: formData.email,
       message: formData.message,
     };
-
+    emailjs.send(process.env.EMAILJS_SERVICE_ID,process.env.EMAILJS_TEMPLATE_ID, formData, {
+publicKey: process.env.EMAILJS_PUBLIC_KEY
+    })
     client.create(contact)
       .then(() => {
         setLoading(false);
         setIsFormSubmitted(true);
       })
       .catch((err) => console.log(err));
+
+  
   };
 
   return (
